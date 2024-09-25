@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitra Simetris</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="ASSET/image 1 1.png">
+</head>
+<body class="bg-[#090f1a]">
+      <!--Header-->
+
+
+
+    <div class="w-[100vw] flex h-auto justify-center align-middle " >
+    <nav class=" fixed z-50 rounded-xl px-4 py-4 flex justify-between items-center m-5 bg-white mx-auto  w-[80%] shadow-lg " >
+      <a class="text-3xl font-bold leading-none" href="#">
+        <img class="w-12 ml-8" src="/ASSET/image 1 1.png" alt="">
+      </a>
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-blue-600 p-3">
+          <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="/index.html">Home</a></li>
+        <li class="text-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+          </svg>
+        </li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="/about.html">About Us</a></li>
+        <li class="text-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+          </svg>
+        </li>
+        
+        <li><a class="text-sm text-blue-600 font-bold" href="/priching.html">Product</a></li>
+        <li class="text-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+          </svg>
+        </li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="/contact.html">Contact</a></li>
+      </ul>
+      <a data-modal-target="login-popup" data-modal-toggle="login-popup" class="hidden lg:inline-block lg:ml-auto lg:mr-3   text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" href="#">Sign In</a>
+      <a class="hidden lg:inline-block  px-6text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" href="#">Sign up</a>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            <img class="w-12 ml-8" src="/ASSET/image 1 1.png" alt="">
+          </a>
+          <button class="navbar-close">
+            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="index.html">Home</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/about.html">About Us</a>
+            </li>
+            
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/priching.html">Product</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto">
+          <div class="pt-6">
+            <a data-modal-target="login-popup" data-modal-toggle="login-popup" class="block text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" type="button" href="#">Sign in</a>
+            <a class="block text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" href="#">Sign Up</a>
+          </div>
+          <p class="my-4 text-xs text-center text-gray-400">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">PT.Mitra Simetris™</a>. All Rights Reserved.
+          </p>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+
+<script>
+// Burger menus
+document.addEventListener('DOMContentLoaded', function() {
+// open
+const burger = document.querySelectorAll('.navbar-burger');
+const menu = document.querySelectorAll('.navbar-menu');
+
+if (burger.length && menu.length) {
+    for (var i = 0; i < burger.length; i++) {
+        burger[i].addEventListener('click', function() {
+            for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle('hidden');
+            }
+        });
+    }
+}
+
+// close
+const close = document.querySelectorAll('.navbar-close');
+const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+if (close.length) {
+    for (var i = 0; i < close.length; i++) {
+        close[i].addEventListener('click', function() {
+            for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle('hidden');
+            }
+        });
+    }
+}
+
+if (backdrop.length) {
+    for (var i = 0; i < backdrop.length; i++) {
+        backdrop[i].addEventListener('click', function() {
+            for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle('hidden');
+            }
+        });
+    }
+}
+});
+</script>
+
+
+      <!--content-->
+      <section class="text-gray-600 body-font">
+        <div class="container mt-20 px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:border-4 hover:bg-gray-500/70 rounded-xl ">
+              <a class="block relative h-48 rounded overflow-hidden" href="/daftar/barang1.html">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/ASSET/0cf7bdedfc934f25eff2f7eeeec2d905.jpeg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-white text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 class="text-white title-font text-lg font-medium">Kwh Meter Analog 1Phasa (uk 5/20A, 20/60A)</h2>
+                <p class="mt-1 text-white">$16.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:border-4 hover:bg-gray-500/70 rounded-xl">
+              <a class="block relative h-48 rounded overflow-hidden" href="/daftar/barang2.html">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/ASSET/images.jpeg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-white text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 class="text-white title-font text-lg font-medium">Kwh Meter Analog 3Phasa Direct Conection (uk. 5/20A, 20/60A, 50/100A) Single</h2>
+                <p class="mt-1 text-white">$21.15</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:border-4 hover:bg-gray-500/70 rounded-xl">
+              <a class="block relative h-48 rounded overflow-hidden" href="/daftar/barang3.html">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/ASSET/images (1).jpeg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-white text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 class="text-white title-font text-lg font-medium">Kwh Meter Analog 3Phasa CT Conection (uk. 5A) Single dan Double tarif</h2>
+                <p class="mt-1 text-white">$12.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:border-4 hover:bg-gray-500/70 rounded-xl">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/ASSET/schetchik_elektroenergii_ase_6000_kl_t__1_0_220___380v_5___100a-06730-30568285076628.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-white text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                <h2 class="text-white title-font text-lg font-medium">The 400 Blows</h2>
+                <p class="mt-1 text-white">$18.40</p>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </section>
+
+      <!--sect-->
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+              <div class="h-full text-center">
+                <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="/ASSET/atar.png">
+                <p class="leading-relaxed text-gray-200">"Barangnya oke, meski tidak sebagus yang saya harapkan. Ada beberapa goresan kecil, tapi secara keseluruhan masih layak digunakan. Pengirimannya juga sedikit terlambat dari estimasi. Mungkin bisa lebih baik lagi dalam hal pengepakan dan pengiriman."</p>
+                <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-6 mb-4"></span>
+                <h2 class="text-gray-300 font-medium title-font tracking-wider text-sm">Ujang</h2>
+                <p class="text-gray-500">Users</p>
+              </div>
+            </div>
+            <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+              <div class="h-full text-center">
+                <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="/ASSET/owejlasizjbdgaf.png">
+                <p class="leading-relaxed text-gray-200">"Barang ini sangat memuaskan! Kualitasnya luar biasa, dan sesuai dengan deskripsi di website. Proses pengiriman cepat, dan paket tiba dalam kondisi baik. Sangat direkomendasikan bagi yang mencari produk serupa. Saya pasti akan membeli lagi di sini!"</p>
+                <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-6 mb-4"></span>
+                <h2 class="text-gray-300 font-medium title-font tracking-wider text-sm">Atharif</h2>
+                <p class="text-gray-500">Users</p>
+              </div>
+            </div>
+            <div class="lg:w-1/3 lg:mb-0 p-4">
+              <div class="h-full text-center">
+                <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="/ASSET/malik.png">
+                <p class="leading-relaxed text-gray-200">"Saya sangat kecewa dengan produk ini. Kualitasnya tidak seperti yang diiklankan. Pengiriman lambat, dan paket datang dalam kondisi rusak. Saya sudah menghubungi layanan pelanggan, tetapi belum mendapat solusi yang memuaskan."</p>
+                <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-6 mb-4"></span>
+                <h2 class="text-gray-300 font-medium title-font tracking-wider text-sm">Athifa</h2>
+                <p class="text-gray-500">Users</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+       <!--FOOTER-->
+
+
+<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">PT.Mitra Simetris™</a>. All Rights Reserved.
+  </span>
+  <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+    <li>
+      <a href="/index.html" class="hover:underline me-4 md:me-6">Home</a>
+  </li>
+  <li>
+      <a href="/about.html" class="hover:underline me-4 md:me-6">About</a>
+  </li>
+  <li>
+      <a href="priching.html" class="hover:underline me-4 md:me-6">Product</a>
+  </li>
+  <li>
+      <a href="/contact.html" class="hover:underline">Contact</a>
+  </li>
+  </ul>
+  </div>
+</footer>
+
+    <!--END FOOTER-->
+    
+     <!--Login popup-->
+      
+      
+
+     <div id="login-popup" tabindex="-1"
+     class="bg-black/50 overflow-y-auto overflow-x-hiddentop-0 right-0 left-0 z-50 items-center justify-center  hidden fixed   w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+     <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+ 
+         <div class="relative bg-white rounded-lg shadow">
+             <button type="button"
+                 class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close"><svg
+                     aria-hidden="true" class="w-5 h-5" fill="#c6c7c7" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd"
+                         d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                         cliprule="evenodd"></path>
+                 </svg>
+                 <span class="sr-only">Close popup</span>
+             </button>
+ 
+             <div class="p-5  ">
+                 <h3 class="text-2xl mb-0.5 font-medium"></h3>
+                 <p class="mb-4 text-sm font-normal text-gray-800"></p>
+ 
+                 <div class="text-center">
+                     <p class="mb-3 text-2xl font-semibold leading-5 text-slate-900">
+                         Login to your account
+                     </p>
+                     <p class="mt-2 text-sm leading-4 text-slate-600">
+                         You must be logged in to perform this action.
+                     </p>
+                 </div>
+ 
+                 <div class="mt-7 flex flex-col gap-2">
+ 
+                     <button
+                         class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
+                             src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub"
+                             class="h-[18px] w-[18px] ">
+                         Continue with GitHub
+                     </button>
+ 
+                     <button
+                         class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
+                             src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google"
+                             class="h-[18px] w-[18px] ">Continue with
+                         Google
+                     </button>
+ 
+ 
+                     <button
+                         class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
+                             src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="Google"
+                             class="h-[18px] w-[18px] ">Continue with
+                         LinkedIn
+                     </button>
+                 </div>
+ 
+                 <div class="flex w-full items-center gap-2 py-6 text-sm text-slate-600">
+                     <div class="h-px w-full bg-slate-200"></div>
+                     OR
+                     <div class="h-px w-full bg-slate-200"></div>
+                 </div>
+ 
+ 
+                 <form class="w-full">
+                     <label for="email" class="sr-only">Email address</label>
+                     <input name="email" type="email" autocomplete="email" required=""
+                         class="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                         placeholder="Email Address" value="">
+                     <label for="password" class="sr-only">Password</label>
+                     <input name="password" type="password" autocomplete="current-password" required=""
+                         class="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                         placeholder="Password" value="">
+                     <p class="mb-3 mt-2 text-sm text-gray-500">
+                         <a href="/forgot-password" class="text-blue-800 hover:text-blue-600">Reset your password?</a>
+                     </p>
+                     <button type="submit"
+                         class="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400">
+                         Continue
+                     </button>
+                 </form>
+ 
+                 <div class="mt-6 text-center text-sm text-slate-600">
+                     Don't have an account?
+                     <a href="/signup" class="font-medium text-[#4285f4]">Sign up</a>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ 
+       <!--END LOGIN POPUP-->
+ 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+</html>
